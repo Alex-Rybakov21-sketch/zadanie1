@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UL списки</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #e9f3ff;
+            padding: 20px;
+        }
+
+        .curs { font-style: italic; }
+        .bold { font-weight: bold; }
+
+        .rom { list-style-type: upper-roman; }
+
+        .sq  { list-style-type: square; }
+        .cir { list-style-type: circle; }
+    </style>
+</head>
+<body>
+
+    <h1>Неупорядоченные списки (UL)</h1>
+
+    <p>
+        <span class="curs">Начальный тег:</span>
+        <span class="bold curs">обязателен,</span>
+        <span class="curs">Конечный тег:</span>
+        <span class="bold curs">не обязателен</span>
+    </p> 
+
+    <h2 class="curs">Определения атрибутов</h2>   
+
+    <ol class="rom">
+        <li>
+            <span class="bold">type – нежелателен.</span> Возможные значения:
+            <ul class="sq">
+                <li><code>disc</code> – закрашенный круг</li>
+                <li><code>square</code> – чёрный квадрат</li>
+                <li><code>circle</code> – окружность</li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="bold">compact – нежелателен.</span> Делает список компактнее.
+            <ul class="cir bold">
+                <li>Один атрибут</li>
+                <li>Второй атрибут</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>
